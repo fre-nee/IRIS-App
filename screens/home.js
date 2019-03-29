@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, Button } from 'react-native';
+import { View, StyleSheet, Text, Image } from 'react-native';
+import { scale, moderateScale, verticalScale } from 'react-native-size-matters';
+import HeaderBar from '../components/headerBar';
 
 class Home extends Component {
     render() {
         return (
             <View style={styles.container}>
-               <View>
-                    <Text>Hello</Text>
-               </View>
-                <Text>Home Screen App</Text>
-                <Button title="Learn More" />
-                    
+                <HeaderBar />
+                <Text>
+                     
+                </Text>
             </View>
         );
     }
@@ -19,8 +19,20 @@ export default Home;
 
 const styles = StyleSheet.create({
     container: {
+        backgroundColor: '#f5f5f5',
         flex: 1,
-        backgroundColor: '#F5F5F5',
-        alignItems: 'center',
+    },
+
+    regularText: {
+        fontFamily: 'regular',
+        color: '#393939',
+    },
+    mediumText: {
+        fontFamily: 'medium',
+        color: '#393939',
+    },
+    lightText: {
+        fontFamily: 'light',
+        color: '#393939',
     },
 });
