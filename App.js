@@ -1,11 +1,5 @@
 import React from 'react';
-import {
-    StyleSheet,
-    Text,
-    View,
-    StatusBar,
-    ActivityIndicator,
-} from 'react-native';
+import { View, StatusBar } from 'react-native';
 import { Provider } from 'react-redux';
 import store from './store';
 import NavigationRoute from './config/navigationRoute';
@@ -31,22 +25,8 @@ export default class App extends React.Component {
         console.log(this.state.loaded);
         return (
             <Provider store={store}>
-                {this.state.loaded ? (
-                    <View style={styles.container}>
-                        <NavigationRoute />
-                    </View>
-                ) : (
-                    <Expo.AppLoading />
-                )}
+                {this.state.loaded ? <NavigationRoute /> : <Expo.AppLoading />}
             </Provider>
         );
     }
 }
-
-const styles = StyleSheet.create({
-    container: {
-        fontFamily : 'regular',
-        flex: 1,
-        backgroundColor: '#F5F5F5',
-    },
-});
