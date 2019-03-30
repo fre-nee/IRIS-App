@@ -22,7 +22,6 @@ export default class App extends React.Component {
     }
 
     render() {
-        console.log(this.state.loaded);
         return (
             <Provider store={store}>
                 {this.state.loaded ? <NavigationRoute /> : <Expo.AppLoading />}

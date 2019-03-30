@@ -118,12 +118,12 @@ const styles = StyleSheet.create({
     },
     dataOf: {
         fontFamily: 'regular',
-        fontSize: 22,
+        fontSize: scale(22),
     },
 
     subtitle: {
         color: '#a6a6a6',
-        fontSize: 12,
+        fontSize: scale(12),
     },
 
     regularText: {
