@@ -19,9 +19,35 @@ class SwitchElement extends Component {
             switchOn1: !this.state.switchOn1,
         });
         if (this.state.switchOn1) {
-            console.log('switch 1 is ON' + this.state.switchOn1);
+            fetch('http://192.168.43.113/setpins', {
+                headers: {
+                    Accept: 'application/json',
+                    'Content-Type': 'application/json',
+                },
+                method: 'POST',
+                body: JSON.stringify({ pin: '0', status: '1' }),
+            })
+                .then(function(res) {
+                    console.log(res);
+                })
+                .catch(function(res) {
+                    console.log(res);
+                });
         } else {
-            console.log('switch 1 is OFF' + this.state.switchOn1);
+            fetch('http://192.168.43.113/setpins', {
+                headers: {
+                    Accept: 'application/json',
+                    'Content-Type': 'application/json',
+                },
+                method: 'POST',
+                body: JSON.stringify({ pin: '0', status: '0' }),
+            })
+                .then(function(res) {
+                    console.log(res);
+                })
+                .catch(function(res) {
+                    console.log(res);
+                });
         }
     };
 
@@ -30,9 +56,35 @@ class SwitchElement extends Component {
             switchOn2: !this.state.switchOn2,
         });
         if (this.state.switchOn2) {
-            console.log('switch 2 is ON' + this.state.switchOn2);
+            fetch('http://192.168.43.113/setpins', {
+                headers: {
+                    Accept: 'application/json',
+                    'Content-Type': 'application/json',
+                },
+                method: 'POST',
+                body: JSON.stringify({ pin: '1', status: '1' }),
+            })
+                .then(function(res) {
+                    console.log(res);
+                })
+                .catch(function(res) {
+                    console.log(res);
+                });
         } else {
-            console.log('switch 2 is OFF' + this.state.switchOn2);
+            fetch('http://192.168.43.113/setpins', {
+                headers: {
+                    Accept: 'application/json',
+                    'Content-Type': 'application/json',
+                },
+                method: 'POST',
+                body: JSON.stringify({ pin: '1', status: '0' }),
+            })
+                .then(function(res) {
+                    console.log(res);
+                })
+                .catch(function(res) {
+                    console.log(res);
+                });
         }
     };
 
@@ -41,9 +93,35 @@ class SwitchElement extends Component {
             switchOn3: !this.state.switchOn3,
         });
         if (this.state.switchOn3) {
-            console.log('switch 3 is ON' + this.state.switchOn3);
+            fetch('http://192.168.43.113/setpins', {
+                headers: {
+                    Accept: 'application/json',
+                    'Content-Type': 'application/json',
+                },
+                method: 'POST',
+                body: JSON.stringify({ pin: '2', status: '1' }),
+            })
+                .then(function(res) {
+                    console.log(res);
+                })
+                .catch(function(res) {
+                    console.log(res);
+                });
         } else {
-            console.log('switch 3 is OFF' + this.state.switchOn3);
+            fetch('http://192.168.43.113/setpins', {
+                headers: {
+                    Accept: 'application/json',
+                    'Content-Type': 'application/json',
+                },
+                method: 'POST',
+                body: JSON.stringify({ pin: '2', status: '0' }),
+            })
+                .then(function(res) {
+                    console.log(res);
+                })
+                .catch(function(res) {
+                    console.log(res);
+                });
         }
     };
 
@@ -52,9 +130,35 @@ class SwitchElement extends Component {
             switchOn4: !this.state.switchOn4,
         });
         if (this.state.switchOn4) {
-            console.log('switch 4 is ON' + this.state.switchOn4);
+            fetch('http://192.168.43.113/setpins', {
+                headers: {
+                    Accept: 'application/json',
+                    'Content-Type': 'application/json',
+                },
+                method: 'POST',
+                body: JSON.stringify({ pin: '3', status: '1' }),
+            })
+                .then(function(res) {
+                    console.log(res);
+                })
+                .catch(function(res) {
+                    console.log(res);
+                });
         } else {
-            console.log('switch 4 is OFF' + this.state.switchOn4);
+            fetch('http://192.168.43.113/setpins', {
+                headers: {
+                    Accept: 'application/json',
+                    'Content-Type': 'application/json',
+                },
+                method: 'POST',
+                body: JSON.stringify({ pin: '3', status: '0' }),
+            })
+                .then(function(res) {
+                    console.log(res);
+                })
+                .catch(function(res) {
+                    console.log(res);
+                });
         }
     };
 
