@@ -1,9 +1,9 @@
 {
   "devToolsPort": 19002,
-  "expoServerPort": 19000,
-  "packagerPort": 19003,
-  "packagerPid": 9028,
+  "expoServerPort": null,
+  "packagerPort": null,
+  "packagerPid": null,
   "expoServerNgrokUrl": "https://up-2yg.neil6531.home-iot.exp.direct",
   "packagerNgrokUrl": "https://packager.up-2yg.neil6531.home-iot.exp.direct",
-  "ngrokPid": 9039
+  "ngrokPid": 1615
 }

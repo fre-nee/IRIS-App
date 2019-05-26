@@ -10,7 +10,7 @@ class Home extends Component {
         return (
             <View style={styles.container}>
                 <HeaderBar />
-                <TitleBar />
+                <TitleBar props={this.props} />
                 <SwitchElement />
             </View>
         );
